@@ -1,7 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
-import AuditTrail from "./Pages";
+import Login from "./Pages/Login";
+import Approvals from "./Pages/Approvals";
 import "./App.css"
 import "./assets/styles/styles.css"
 
@@ -12,8 +13,8 @@ const App = () => {
       <Header />
   
       <Routes>
-        <Route path="/" element={<AuditTrail />} />
-        {/* <Route path="/TeamSelectionPage" element={<TeamSelectionPage />} /> */}     
+        <Route path="/" element={<Login />} />
+        <Route path="/Approvals" element={<Approvals />} />     
         {/* <Route path="*" element={<NotFound />} /> */}
       </Routes>
 

@@ -1,5 +1,7 @@
 import { useState } from 'react';
-import "../../assets/styles/styles.css"
+import { Link } from 'react-router-dom';
+import "../../assets/styles/styles.css";
+
 const LoginForm = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -40,7 +42,9 @@ const LoginForm = () => {
           required
         />
       </div>
-      <button type="submit">Log In</button>
+      <Link to="/Approvals">
+        <button>Log In</button>
+      </Link>
     </form>
   );
 };

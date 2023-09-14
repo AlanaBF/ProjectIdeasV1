@@ -1,6 +1,6 @@
 body {
   flex-direction: column;
-  min-height: 100vh;
+  width: 100%;
   font-family: Montserrat, Roboto, sans-serif;
   text-align: center;
   margin: 0;
@@ -22,7 +22,6 @@ body {
   padding: 20px;
   font-size: 1rem !important;
   text-align: center;
-  width: 100%;
 }
 
 .logo-text {
@@ -30,19 +29,16 @@ body {
   margin: auto;
 }
 
-/* Main Page */
+/* Login Page */
 
 .pageBackground {
   position: relative;
   overflow: hidden;
   margin: 0;
-  font-size: 1rem !important;
-  text-align: center;
-  width: 100%;
   padding: 20px;
   font-size: 1rem !important;
   text-align: center;
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 .video {
@@ -63,106 +59,133 @@ body {
 }
 
 .sub-title {
-    color: white;
-    text-align: center;
-    padding: 50px;
-    font-size: 2rem;
-  }
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+}
 
 /* LoginForm.css */
 
+.loginContainer {
+  background-color: rgba(0, 0, 0, 0.35);
+  border: solid 5px white;
+  border-radius: 20px;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 10px auto;
+  padding: 50px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
 
-  
-  label {
-   color: white;
-    font-size:1rem;
-    font-weight: 900;
-    margin-bottom: 5px;
-  }
-  
-  input {
+a {
+  color: white;
+}
+
+label {
+  display: flex;
+  color: white;
+  font-size: 1rem;
+  font-weight: 900;
+  text-align: center;
+  padding: 10px;
+  /* justify-content: center; */
+  /* margin-bottom: 5px; */
+}
+
+input {
   margin: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: border-color 0.2s ease;
-  }
-  
-  input:focus {
-    border-color: var(--bright-green);
-    outline: none;
-  }
-  
-  button {
-    padding: 10px 15px;
-    background-color: var(--dark-green);
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-  }
-  
-  button:hover {
-    background-color: var(--bright-green);
-  }
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.2s ease;
+}
 
+input:focus {
+  border-color: var(--bright-green);
+  outline: none;
+}
 
+button {
+  padding: 10px 15px;
+  background-color: var(--dark-green);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--bright-green);
+}
+
+/* Approvals page  */
+.approvalsBackground {
+  background-color: var(--grey-green);
+  padding: 20px;
+  margin: 0;
+  text-align: center;
+  min-height: 80vh;
+}
+
+.approvals-image {
+  width:100%;
+}
 /* Styles for the footer */
 .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--grey-green);
-    color: var(--bright-green);
-    padding: 20px;
-    font-size: 1rem !important;
-    text-align: center;
-  }
-  
-  /* Styles for the "Follow" and social media icons */
-
-  .footer-logo-text {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  background-color: var(--grey-green);
+  color: var(--bright-green);
+  padding: 20px;
+  font-size: 1rem !important;
+  text-align: center;
  
-    width: 50%;
- 
-  }
+}
 
-  .footer-row-social {
-    display: flex;
-    align-items: center;
-    margin: auto;
-  }
-  
-  .menu-social {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .menu-social li {
-    display: inline-block;
-    margin-right: 10px;
-  }
-  
-  .menu-social li:last-child {
-    margin-right: 0;
-  }
-  
-  .menu-social a {
-    color: var(--bright-green);
-    font-size: 18px;
-  }
-  
-  /* Optional: Add hover effects to the social media icons */
-  .menu-social a:hover {
-    color: #05d2a2;
-  }
-  
-  /* Custom styles for Font Awesome icons (if you're using Font Awesome) */
-  .fa {
-    color: var(--dark-green) !important;
-  }
-  
+/* Styles for the "Follow" and social media icons */
+
+.footer-logo-text {
+  margin: auto;
+  width: 50%;
+}
+
+.footer-row-social {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.menu-social {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-social li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.menu-social li:last-child {
+  margin-right: 0;
+}
+
+.menu-social a {
+  color: var(--bright-green);
+  font-size: 18px;
+}
+
+/* Optional: Add hover effects to the social media icons */
+.menu-social a:hover {
+  color: #05d2a2;
+}
+
+/* Custom styles for Font Awesome icons (if you're using Font Awesome) */
+.fa {
+  color: var(--dark-green) !important;
+}
